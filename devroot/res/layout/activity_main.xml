@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="your name here"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnStartActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start activity"
+        android:onClick="btn1Pressed"
+
+        />
+
+</LinearLayout>

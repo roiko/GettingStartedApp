@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        >
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ivNavClick"
+            android:src="@drawable/left" />
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ivNavClick"
+            android:src="@drawable/right" />
+
+    </LinearLayout>
+
+        <GridView
+        android:id="@+id/gvDaysNames"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center_horizontal"       
+        >
+    </GridView>
+    <GridView
+        android:id="@+id/gvDaysofMonth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center_horizontal"       
+        >
+    </GridView>
+    
+
+    <!--  bottom: contiene il selettore delle ore e i residui  -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7d92ccf8" 
+        >
+        <LinearLayout 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+    		<TextView
+    		    android:id="@+id/tvSelectHours"
+    		    android:textAppearance="?android:attr/textAppearanceLarge"
+    		    android:layout_width="wrap_content"
+    		    android:layout_gravity="center_horizontal"
+    		    android:layout_height="wrap_content"
+    		    android:text="@string/tvSelectHours" 
+    		    />
+	        <NumberPicker
+        	android:id="@+id/npSelectHours"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	/>
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+</LinearLayout>

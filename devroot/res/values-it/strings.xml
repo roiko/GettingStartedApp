@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mia GettingStarted app</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tvSelectHours">Ore</string>
+    <string name="title_activity_second">Seconda Activity</string>
+    
+    
+    <!-- Months -->
+    <string name="January">Gennaio</string>
+    <string name="February">Febbraio</string>
+    <string name="March">Marzo</string>
+    <string name="April">Aprile</string>
+    <string name="May">Maggio</string>
+    <string name="June">Giugno</string>
+    <string name="July">Luglio</string>
+    <string name="August">Agosto</string>
+    <string name="September">Settembre</string>
+    <string name="October">Ottobre</string>
+    <string name="November">Novembre</string>
+    <string name="December">Dicembre</string>
+    
+    <!-- Days -->
+    <string name="Sun">Do</string>
+    <string name="Mon">Lu</string>
+    <string name="Tue">Ma</string>
+    <string name="Wed">Me</string>
+    <string name="Thu">Gi</string>
+    <string name="Fri">Ve</string>
+    <string name="Sat">Sa</string>
+
+
+</resources>

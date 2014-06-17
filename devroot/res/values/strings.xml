@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My GettingStarted app</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tvSelectHours">Hours</string>
+    <string name="title_activity_second">Second Activity</string>
+    
+    
+    <!-- Months -->
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+    
+    <!-- Days -->
+    <string name="Sun">Sun</string>
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+
+
+</resources>

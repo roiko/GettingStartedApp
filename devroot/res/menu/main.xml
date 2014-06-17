@@ -1,0 +1,16 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"  >
+
+    <!--  Item settings di default -->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <!--  Mio Item di prova, non fa nulla -->
+	   <item android:id="@+id/action_myItem"
+	       android:orderInCategory="1"
+          android:title="mio Item"
+          android:showAsAction="never" />
+    
+</menu>
