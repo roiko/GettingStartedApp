@@ -1,0 +1,24 @@
+DDL per database:
+
+CREATE TABLE [DB_INFO] (
+  [key] TEXT, 
+  [value] TEXT);
+
+
+CREATE TABLE [EN_ACCRUALS] (
+  [last_year_holidays] FLOAT, 
+  [last_year_rolls] FLOAT, 
+  [this_year_monthly_holidays] FLOAT, 
+  [this_year_monthly_rolls] FLOAT);
+
+
+CREATE TABLE [EN_HOLIDAYS] (
+  [month] INT, 
+  [day] INT, 
+  [hours] INT, 
+  [year] INT);
+
+
+CREATE TABLE [EN_PERSONAL] (
+  [surname] TEXT, 
+  [name] TEXT);
