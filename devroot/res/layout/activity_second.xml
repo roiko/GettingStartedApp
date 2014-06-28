@@ -45,17 +45,7 @@
 
     </LinearLayout>
 
-        <GridView
-        android:id="@+id/gvDaysNames"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="7"
-        android:verticalSpacing="0dp"
-        android:horizontalSpacing="5dp"
-        android:stretchMode="columnWidth"
-        android:gravity="center_horizontal"       
-        >
-    </GridView>
+    
     <GridView
         android:id="@+id/gvDaysofMonth"
         android:layout_width="fill_parent"

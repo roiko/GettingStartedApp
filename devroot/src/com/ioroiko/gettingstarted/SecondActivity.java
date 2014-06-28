@@ -66,13 +66,7 @@ public class SecondActivity extends Activity {
 		TextView tvMonth = (TextView) findViewById(R.id.tvMonth);
 		tvMonth.setText(Utils.MonthNameFromInt(this, month));
 		
-		GridView gvHeader = (GridView) findViewById(R.id.gvDaysNames);
-		String[] daysH = Utils.daysArrayHeader(this);
-		ArrayAdapter<String> aaHeader = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,daysH);
-		gvHeader.setAdapter(aaHeader);
-		
 		GridView gv = (GridView) findViewById(R.id.gvDaysofMonth);
-		//String[] sDays=Utils.daysArrayWithHeader(this, curYear, curMonth);
 		
 		Calendar cal = new GregorianCalendar();
 		int day1 = cal.get(Calendar.DAY_OF_MONTH);
@@ -80,7 +74,7 @@ public class SecondActivity extends Activity {
 		int year1 = cal.get(Calendar.YEAR);
 		int dayWeek = cal.get(Calendar.DAY_OF_WEEK);
 		int firstDayOfWeek = cal.getFirstDayOfWeek();
-		ArrayList<Day> daysOfMonth = Utils.dayArrayWithNoHeader(this, curYear, curMonth, festivities);
+		ArrayList<Day> daysOfMonth = Utils.dayArrayWithHeader(this, curYear, curMonth, festivities);
 		ArrayButtonAdapter abaTest = new ArrayButtonAdapter(this, android.R.layout.simple_list_item_1, daysOfMonth);
 		gv.setAdapter(abaTest);
 		

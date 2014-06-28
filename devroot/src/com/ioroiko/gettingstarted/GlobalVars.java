@@ -19,6 +19,8 @@ public class GlobalVars {
 	{
 		int Year,Month,Day=-1;
 		boolean IsFestivity=false;
+		boolean IsHeader = false;
+		String DayName =""; //If isHeader=true, DayName = Su,Mo,Tu,We,Th,Fr,Sa.
 		public Day(int year,int month, int day, boolean isFestivity)
 		{
 			Year=year;
@@ -28,6 +30,7 @@ public class GlobalVars {
 		}
 	}
 	
+
 	public static int selectedHours=1;
 
 	public final static String EXTRA_NAME = "com.ioroiko.EXTRA_NAME";	

@@ -30,17 +30,16 @@ public final class R {
         public static final int right=0x7f020005;
     }
     public static final class id {
-        public static final int action_myItem=0x7f08000c;
-        public static final int action_settings=0x7f08000b;
+        public static final int action_myItem=0x7f08000b;
+        public static final int action_settings=0x7f08000a;
         public static final int btnStartActivity=0x7f080002;
         public static final int etName=0x7f080001;
-        public static final int gvDaysNames=0x7f080007;
-        public static final int gvDaysofMonth=0x7f080008;
+        public static final int gvDaysofMonth=0x7f080007;
         public static final int ivLeft=0x7f080004;
         public static final int ivRight=0x7f080006;
-        public static final int npSelectHours=0x7f08000a;
+        public static final int npSelectHours=0x7f080009;
         public static final int tvMonth=0x7f080005;
-        public static final int tvSelectHours=0x7f080009;
+        public static final int tvSelectHours=0x7f080008;
         public static final int tvTop=0x7f080000;
         public static final int tvYear=0x7f080003;
     }

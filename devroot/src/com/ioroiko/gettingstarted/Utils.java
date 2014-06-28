@@ -123,6 +123,41 @@ public class Utils {
 		return sDays;
 	}
 	
+	public static ArrayList<Day> dayArrayWithHeader(Context context, int year, int month, ArrayList<Holiday> festivities)
+	{
+		ArrayList<Day> daysWithHeader = new ArrayList<Day>();
+		Calendar calendar = new GregorianCalendar(year, month,1);
+		int totDays = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+		int offset = FirstDayOfWeekInMonth(context, year, month);
+		String[] daysName = daysArrayHeader(context);
+		
+		//1 Create Header
+		for (String dayName : daysName) {
+			Day day = new Day(year, month, -1, false);
+			day.IsHeader = true;
+			day.DayName=dayName;
+			daysWithHeader.add(day);
+		}
+		
+		//2 Fill days
+		ArrayList<Day> daysOfMonth = new ArrayList<GlobalVars.Day>();
+		daysOfMonth = dayArrayWithNoHeader(context, year, month, festivities);
+		for (Day day : daysOfMonth) {
+			daysWithHeader.add(day);
+		}
+		
+		//3 Fill last days null
+		while(daysWithHeader.size()<=49)// 7days*6week + 7days of header is the maximum
+		{
+			daysWithHeader.add(null);
+		}
+		
+		
+
+		
+		return daysWithHeader;
+	}
+	
 	public static ArrayList<Day> dayArrayWithNoHeader(Context context, int year, int month, ArrayList<Holiday> festivities)
 	{
 		ArrayList<Day> days = new ArrayList<Day>();

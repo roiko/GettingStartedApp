@@ -90,6 +90,11 @@ public class ArrayButtonAdapter extends ArrayAdapter {
 				dbtn.IsValid=false;
 				return dbtn;
 			}
+			else if (day.IsHeader) {
+				dbtn.IsValid=false;
+				dbtn.setText(day.DayName);
+				return dbtn;
+			}
 			
 			
 			dbtn.day= day.Day;
